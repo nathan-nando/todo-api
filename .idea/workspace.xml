@@ -5,41 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="de8fd046-ed6f-4f6c-9230-9aca16d69286" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.env.local" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.env.product" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.env.staging" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/database.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/type.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/internal/abstraction/entity.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/internal/abstraction/pagination.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/internal/abstraction/repository.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/internal/dto/user/request.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/internal/dto/user/response.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/internal/entity/user.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/internal/factory/factory.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/internal/http/http.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/internal/middleware/context.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/internal/middleware/error.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/internal/middleware/middleware.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/internal/repository/auth.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/internal/usecase/auth/handler.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/internal/usecase/auth/router.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/internal/usecase/auth/service.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pkg/env/env.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pkg/log/service.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pkg/log/types.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pkg/response/error.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pkg/response/response.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pkg/response/success.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pkg/utils/constant/constant.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pkg/utils/date/date.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pkg/utils/trxmanager/trxmanager.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pkg/validator/validator.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.local" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.product" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.staging" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/TodoAPI.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,6 +49,9 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/pkg" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
