@@ -1,0 +1,8 @@
+basePath: /
+info:
+  contact: {}
+  description: API DOCUMENTATION TODOLIST API
+  title: TodoList API
+  version: "1.0"
+paths: {}
+swagger: "2.0"

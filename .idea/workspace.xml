@@ -5,7 +5,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="de8fd046-ed6f-4f6c-9230-9aca16d69286" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.env.local" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.env.product" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.env.staging" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/database.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/type.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/abstraction/entity.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/abstraction/pagination.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/abstraction/repository.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/dto/user/request.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/dto/user/response.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/entity/user.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/factory/factory.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/http/http.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/middleware/context.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/middleware/error.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/middleware/middleware.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/repository/auth.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/usecase/auth/handler.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/usecase/auth/router.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/usecase/auth/service.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/env/env.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/log/service.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/log/types.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/response/error.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/response/response.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/response/success.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/utils/constant/constant.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/utils/date/date.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/utils/trxmanager/trxmanager.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/validator/validator.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,23 +65,95 @@
     "RunOnceActivity.go.migrated.go.modules.settings": "true",
     "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "dev",
     "go.import.settings.migrated": "true",
-    "last_opened_file_path": "/home/nathan/Desktop/Project/TodoAPI",
+    "last_opened_file_path": "/home/nathan/Desktop/Project/TodoAPI/pkg",
     "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)"
+    "node.js.selected.package.eslint": "(autodetect)",
+    "settings.editor.selected.configurable": "configurable.group.appearance"
   }
 }]]></component>
-  <component name="RunManager">
-    <configuration name="go build TodoAPI" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pkg" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Go Build.LOCAL">
+    <configuration name="LOCAL" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="TodoAPI" />
       <working_directory value="$PROJECT_DIR$" />
+      <parameters value="-dbConfiguration=&quot;TODO_MYSQL&quot;" />
+      <envs>
+        <env name="ENV" value="LOCAL" />
+      </envs>
+      <EXTENSION ID="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
+        </ENTRIES>
+      </EXTENSION>
       <kind value="PACKAGE" />
       <package value="TodoAPI" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
+    <configuration name="PRODUCTION" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="TodoAPI" />
+      <working_directory value="$PROJECT_DIR$" />
+      <parameters value="-dbConfiguration=&quot;TODO_MYSQL&quot;" />
+      <envs>
+        <env name="ENV" value="PRODUCTION" />
+      </envs>
+      <EXTENSION ID="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
+        </ENTRIES>
+      </EXTENSION>
+      <kind value="PACKAGE" />
+      <package value="TodoAPI" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="STAGING" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="TodoAPI" />
+      <working_directory value="$PROJECT_DIR$" />
+      <parameters value="-dbConfiguration=&quot;TODO_MYSQL&quot;" />
+      <envs>
+        <env name="ENV" value="STAGING" />
+      </envs>
+      <EXTENSION ID="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
+        </ENTRIES>
+      </EXTENSION>
+      <kind value="PACKAGE" />
+      <package value="TodoAPI" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Go Build.LOCAL" />
+      <item itemvalue="Go Build.PRODUCTION" />
+      <item itemvalue="Go Build.STAGING" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
